@@ -6,7 +6,7 @@ using Mpa.Phonebook.PhoneBook.Dtos;
 namespace Mpa.Phonebook.PhoneBook
 {
     /// <summary>
-    /// Person Service 接口,定义需要实现的CRUD
+    /// PersonService 接口,定义需要实现的CRUD
     /// </summary>
     public interface IPersonAppService:IApplicationService
     {
@@ -24,6 +24,17 @@ namespace Mpa.Phonebook.PhoneBook
         /// <returns></returns>
         Task<PersonListDto> GetPersonByIdAsync(GetPersonInput input);
 
-        Task CreateOrUpdatePersonAsync(GetPersonInput input);
+        /// <summary>
+        /// 新增或者修改人员信息
+        /// </summary>
+        /// <returns></returns>
+        Task CreateOrUpdatePersonAsync();
+
+        /// <summary>
+        //删除人员信息
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task DeletePersonByIdAsync(EntityDto input);
     }
 }
