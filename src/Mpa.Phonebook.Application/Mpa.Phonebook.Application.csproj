@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Mpa.Phonebook.Application</AssemblyName>
+    <PackageId>Mpa.Phonebook.Application</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>Mpa.Phonebook</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefineConstants>FEATURE_SIGNALR_ASPNETCORE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mpa.Phonebook.Core\Mpa.Phonebook.Core.csproj" />
+  </ItemGroup>
+</Project>
