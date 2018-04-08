@@ -3,8 +3,10 @@ using Abp.Application.Services.Dto;
 
 namespace Mpa.Phonebook.PhoneBook.Dtos
 {
-    public class PersonEditDto : FullAuditedEntityDto
+    public class PersonEditDto  
     {
+        public int? Id { get; set; }
+
         /// <summary>
         /// 姓名
         /// </summary>
