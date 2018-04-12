@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
+using Mpa.Phonebook.PhoneBook.PhoneNumbers;
 
 namespace Mpa.Phonebook.PhoneBook.Persons
 {
@@ -32,6 +33,11 @@ namespace Mpa.Phonebook.PhoneBook.Persons
         /// 地址
         /// </summary>
         [MaxLength(500)]
-        public string Address { get; set; } 
+        public string Address { get; set; }
+
+        /// <summary>
+        /// 电话号码
+        /// </summary>
+        public ICollection<PhoneNumber> PhoneNumbers { get; set; }
     }
 }
