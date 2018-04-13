@@ -7,6 +7,9 @@ using Mpa.Phonebook.PhoneBook.PhoneNumbers;
 
 namespace Mpa.Phonebook.PhoneBook.Dtos
 {
+    /// <summary>
+    /// 从Person映射出来到ListDto里面
+    /// </summary>
     [AutoMapFrom(typeof(Person))]
     public class PersonListDto:FullAuditedEntityDto 
     {

@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+ 
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Mpa.Phonebook.PhoneBook.Dtos;
-=======
+ 
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
@@ -15,18 +15,13 @@ using Abp.UI;
 using Microsoft.EntityFrameworkCore;
 using Mpa.Phonebook.PhoneBook.Dtos;
 using Mpa.Phonebook.PhoneBook.Persons;
->>>>>>> 16be02dc76f1129db7077df55ee0c6946090e348
+ 
 
 namespace Mpa.Phonebook.PhoneBook
 {
     public class PersonAppService : PhonebookAppServiceBase, IPersonAppService
     {
-<<<<<<< HEAD
-        public Task<PagedResultDto<PersonListDto>> GetPagedPersonAsync(GetPersonInput input)
-        {
-            throw new System.NotImplementedException();
-        }
-
+  
         public Task<PersonListDto> GetPersonByIdAsync(GetPersonInput input)
         {
             throw new System.NotImplementedException();
@@ -35,7 +30,7 @@ namespace Mpa.Phonebook.PhoneBook
         public Task CreateOrUpdatePersonAsync()
         {
             throw new System.NotImplementedException();
-=======
+
         /// <summary>
         /// 依赖注入，实现对Person的仓储管理
         /// </summary>
@@ -80,16 +75,15 @@ namespace Mpa.Phonebook.PhoneBook
             var entity = input.MapTo<Persons.Person>();
 
             await _personRepository.InsertAsync(entity);
->>>>>>> 16be02dc76f1129db7077df55ee0c6946090e348
+ 
         }
 
         public Task DeletePersonByIdAsync(EntityDto input)
         {
             throw new System.NotImplementedException();
         }
-<<<<<<< HEAD
-=======
-
+ 
+ 
         /// <summary>
         /// 返回具有：分页和排序结果的PersonListDto
         /// </summary>
@@ -160,6 +154,6 @@ namespace Mpa.Phonebook.PhoneBook
 
             return output;
         }
->>>>>>> 16be02dc76f1129db7077df55ee0c6946090e348
+ 
     }
 }
