@@ -1,11 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
+using Mpa.Phonebook.PhoneBook.Persons;
 
 namespace Mpa.Phonebook.PhoneBook.Dtos
 {
     /// <summary>
     /// 人员信息编辑DTO,定义编辑属性（是否必须，属性验证） :FullAuditedEntityDto  
     /// </summary>
+    [AutoMapTo(typeof(Person))]
     public class PersonEditDto
     {
         public int? Id { get; set; }
