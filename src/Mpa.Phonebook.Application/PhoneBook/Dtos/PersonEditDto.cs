@@ -4,11 +4,11 @@ using Abp.Application.Services.Dto;
 namespace Mpa.Phonebook.PhoneBook.Dtos
 {
     /// <summary>
-    /// 人员信息编辑DTO,定义编辑属性（是否必须，属性验证）
+    /// 人员信息编辑DTO,定义编辑属性（是否必须，属性验证） :FullAuditedEntityDto  
     /// </summary>
-    public class PersonEditDto:FullAuditedEntityDto  
+    public class PersonEditDto
     {
-        //public int? Id { get; set; }
+        public int? Id { get; set; }
 
         /// <summary>
         /// 姓名

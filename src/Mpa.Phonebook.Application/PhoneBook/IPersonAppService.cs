@@ -11,7 +11,7 @@ namespace Mpa.Phonebook.PhoneBook
     public interface IPersonAppService:IApplicationService
     {
         /// <summary>
-        /// 获取联系人信息列表,支持分页
+        /// 获取联系人信息列表,GetPersonInput 带有分布和关键字查找属性
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -31,16 +31,17 @@ namespace Mpa.Phonebook.PhoneBook
         Task CreateOrUpdatePersonAsync(CreateOrUpdatePersonDto input);
 
         /// <summary>
+        /// 通过Id获取联系人信息进行编辑或修改 
+        /// </summary>
+        Task<GetPersonForEditOutput> GetPersonForEditAsync(NullableIdDto<int> input);
+
+
+        /// <summary>
         //删除联系人信息
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task DeletePersonAsync(EntityDto input);
-
-        
-        /// <summary>
-        /// 通过Id获取联系人信息进行编辑或修改 
-        /// </summary>
-        Task<GetPersonForEditOutput> GetPersonForEditAsync(NullableIdDto<int> input);
+        Task DeletePersonAsync(EntityDto input); 
+          
     }
 }

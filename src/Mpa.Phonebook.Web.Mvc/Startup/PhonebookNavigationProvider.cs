@@ -52,7 +52,15 @@ namespace Mpa.Phonebook.Web.Startup
                         url: "About",
                         icon: "info"
                     )
-                ).AddItem( // Menu items below is just for demonstration!
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Person,
+                        L("PersonPhonebook"),
+                        url: "Person",
+                        icon: "info"
+                    )
+                )
+                .AddItem( // Menu items below is just for demonstration!
                     new MenuItemDefinition(
                         "MultiLevelMenu",
                         L("MultiLevelMenu"),

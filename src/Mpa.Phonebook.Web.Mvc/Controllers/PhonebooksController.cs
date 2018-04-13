@@ -4,8 +4,8 @@ using Mpa.Phonebook.Controllers;
 
 namespace Mpa.Phonebook.Web.Controllers
 {
-    //[AbpMvcAuthorize]
-    public class AboutController : PhonebookControllerBase
+    [AbpMvcAuthorize]
+    public class PersonController : PhonebookControllerBase
     {
         public ActionResult Index()
         {

@@ -13,7 +13,11 @@
     <DefineConstants>FEATURE_SIGNALR_ASPNETCORE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Controllers\PhonebooksController.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="app.config" />
+    <None Include="Views\Person\Index.cshtml" />
     <None Update="Dockerfile">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

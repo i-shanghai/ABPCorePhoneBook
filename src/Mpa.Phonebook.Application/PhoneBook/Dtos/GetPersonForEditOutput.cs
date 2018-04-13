@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Mpa.Phonebook.PhoneBook.Dtos
 {
-    class GetPersonForEditOutput
+    public class GetPersonForEditOutput
     {
+        public PersonEditDto PersonEditDto { get; set; }
     }
 }

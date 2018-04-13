@@ -19,7 +19,9 @@
     <text name="RememberMe" value="记住我" />
     <text name="LogIn" value="登录" />
 
-    <text name="LoginFailed" value="登录失败!" />
-    
+    <text name="LoginFailed" value="登录失败!" /> 
+
+    <text name="PersonPhonebook" value="联系人信息" />
+
   </texts>
 </localizationDictionary>

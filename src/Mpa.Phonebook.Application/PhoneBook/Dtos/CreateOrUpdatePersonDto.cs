@@ -2,6 +2,6 @@
 {
     public class CreateOrUpdatePersonDto
     {
-        
+        public PersonEditDto PersonEditDto { get; set; }
     }
 }
