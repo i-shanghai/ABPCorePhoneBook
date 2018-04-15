@@ -21,7 +21,20 @@
 
     <text name="LoginFailed" value="登录失败!" /> 
 
+    <text name="Person" value="联系人" />
     <text name="PersonPhonebook" value="联系人信息" />
+    <text name="Name" value="姓名" />
+    <text name="Email" value="邮箱" />
+    <text name="Address" value="地址" />
+    <text name="PhoneNumbers" value="电话号码" />
+    <text name="CreateNewPerson" value="添加联系人" />
+    <text name="PersonDetail" value="联系人详情" />
+    
+
+
+    <text name="CreationTime" value="创建时间" />
+    <text name="Actions" value="操作" />
+
 
   </texts>
 </localizationDictionary>

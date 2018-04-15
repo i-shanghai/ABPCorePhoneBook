@@ -17,21 +17,21 @@ namespace Mpa.Phonebook.PhoneBook.Dtos
         /// 姓名
         /// </summary>
         [Required]
-        [MaxLength(50)]
+        [MaxLength(PhonebookConsts.MaxNameLength)]
         public string Name { get; set; }
 
         /// <summary>
         /// 邮箱
         /// </summary>
         [EmailAddress]
-        [MaxLength(50)]
+        [MaxLength(PhonebookConsts.MaxEmailLength)]
         public string Email { get; set; }
 
 
         /// <summary>
         /// 地址
         /// </summary>
-        [MaxLength(500)]
+        [MaxLength(PhonebookConsts.MaxAddressLength)]
         public string Address { get; set; }
     }
 }
