@@ -29,7 +29,7 @@
     <text name="PhoneNumbers" value="电话号码" />
     <text name="CreateNewPerson" value="添加联系人" />
     <text name="PersonDetail" value="联系人详情" />
-    
+    <text name="DeletePersonConfirm" value="确定删除联系人" />  
 
 
     <text name="CreationTime" value="创建时间" />

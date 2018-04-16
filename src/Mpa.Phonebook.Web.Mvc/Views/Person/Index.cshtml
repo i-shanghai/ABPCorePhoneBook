@@ -58,7 +58,7 @@
                                     <i class="material-icons">menu</i>
                                 </a>
                                 <ul class="dropdown-menu pull-right">
-                                    <li><a href="#" class="waves-effect waves-block edit-person" data-person-id="@person.Id" data-toggle="modal" data-target="#PersonEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
+                                    <li><a href="#" class="waves-effect waves-block edit-person" data-person-id="@person.Id" data-toggle="modal" data-target="#PersonCreateModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
                                     <li><a href="#" class="waves-effect waves-block delete-person" data-person-id="@person.Id" data-person-name="@person.Name"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
                                 </ul>
                             </td>
@@ -90,6 +90,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group form-float">
                                         <div class="form-line">
+                                            <input name="Id" type="hidden" disabled="disabled"/>
                                             <input class="form-control" type="text" name="Name" required maxlength="@PhonebookConsts.MaxNameLength" minlength="2">
                                             <label class="form-label">@L("Name")</label>
                                         </div>

@@ -31,7 +31,7 @@ namespace Mpa.Phonebook.PhoneBook
         Task CreateOrUpdatePersonAsync(CreateOrUpdatePersonDto input);
 
         /// <summary>
-        /// 通过Id获取联系人信息进行编辑或修改 
+        /// 通过Id获取联系人信息,给编辑信息备用
         /// </summary>
         Task<GetPersonForEditOutput> GetPersonForEditAsync(NullableIdDto<int> input);
 
