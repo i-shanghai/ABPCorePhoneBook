@@ -6380,3 +6380,33 @@ INFO  2018-04-13 18:03:19,364 [10   ] .Internal.Transports.WebSocketsTransport -
 INFO  2018-04-13 18:03:19,434 [5    ] .AspNetCore.SignalR.HubConnectionContext - Using HubProtocol 'json'.
 DEBUG 2018-04-13 18:03:19,434 [5    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"9e83fbeb-325b-4fb9-b66c-f10e6141ea97","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2018-04-13T18:03:19.4348813+08:00","Properties":{}}
 DEBUG 2018-04-13 18:03:19,441 [17   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 9e83fbeb-325b-4fb9-b66c-f10e6141ea97
+INFO  2018-04-13 18:06:35,959 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/Person  
+INFO  2018-04-13 18:06:35,965 [6    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2018-04-13 18:06:35,968 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Mpa.Phonebook.Web.Mvc.Controllers.PersonController.Index (Mpa.Phonebook.Web.Mvc) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-13 18:06:36,001 [6    ] ViewFeatures.Internal.ViewResultExecutor - Executing ViewResult, running view at path /Views/Person/Index.cshtml.
+INFO  2018-04-13 18:06:36,090 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Mpa.Phonebook.Web.Mvc.Controllers.PersonController.Index (Mpa.Phonebook.Web.Mvc) in 122.792ms
+INFO  2018-04-13 18:06:36,091 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 131.8693ms 200 text/html; charset=utf-8
+DEBUG 2018-04-13 18:06:36,104 [26   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 9e83fbeb-325b-4fb9-b66c-f10e6141ea97
+INFO  2018-04-13 18:06:36,104 [26   ] .Internal.Transports.WebSocketsTransport - Socket closed.
+INFO  2018-04-13 18:06:36,105 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 196748.6213ms 101 
+INFO  2018-04-13 18:06:36,286 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=636592393835177967  
+INFO  2018-04-13 18:06:36,293 [17   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2018-04-13 18:06:36,295 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) with arguments (Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) - ModelState is Valid
+INFO  2018-04-13 18:06:36,296 [17   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2018-04-13 18:06:36,296 [17   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 1.9587ms
+INFO  2018-04-13 18:06:36,296 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 9.8862ms 200 application/x-javascript
+INFO  2018-04-13 18:06:36,363 [24   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=636592393835177967  
+INFO  2018-04-13 18:06:36,370 [24   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2018-04-13 18:06:36,373 [24   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) with arguments () - ModelState is Valid
+INFO  2018-04-13 18:06:36,441 [26   ] tCore.Mvc.Internal.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2018-04-13 18:06:36,442 [26   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 69.6314ms
+INFO  2018-04-13 18:06:36,442 [26   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 78.6395ms 200 application/x-javascript; charset=utf-8
+INFO  2018-04-13 18:06:36,837 [23   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:62114/signalr  
+INFO  2018-04-13 18:06:36,844 [23   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was successfully authenticated.
+INFO  2018-04-13 18:06:36,844 [23   ] .Internal.Transports.WebSocketsTransport - Socket opened.
+INFO  2018-04-13 18:06:36,892 [26   ] .AspNetCore.SignalR.HubConnectionContext - Using HubProtocol 'json'.
+DEBUG 2018-04-13 18:06:36,893 [26   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"95baccb9-af8f-44d4-af9e-98fb84a57777","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2018-04-13T18:06:36.8932229+08:00","Properties":{}}
+DEBUG 2018-04-13 18:06:36,899 [27   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 95baccb9-af8f-44d4-af9e-98fb84a57777
+DEBUG 2018-04-13 18:06:37,207 [17   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 95baccb9-af8f-44d4-af9e-98fb84a57777
+INFO  2018-04-13 18:06:37,207 [17   ] .Internal.Transports.WebSocketsTransport - Socket closed.
+INFO  2018-04-13 18:06:37,207 [17   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 370.514ms 101 
