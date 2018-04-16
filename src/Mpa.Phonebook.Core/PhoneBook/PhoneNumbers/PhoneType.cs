@@ -9,16 +9,16 @@ namespace Mpa.Phonebook.PhoneBook.PhoneNumbers
         /// <summary>
         /// 移动电话
         /// </summary>
-        Mobile,
+        Mobile=1,
 
        /// <summary>
        /// 家庭电话
        /// </summary>
-        Home,
+        Home=2,
 
         /// <summary>
         /// 公司电话
         /// </summary>
-        Company
+        Company=3
     }
 }

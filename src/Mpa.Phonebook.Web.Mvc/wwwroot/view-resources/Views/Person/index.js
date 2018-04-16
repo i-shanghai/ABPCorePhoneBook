@@ -18,6 +18,14 @@
             //Form表单序列化为Object
             var personEditDto = _$form.serializeFormToObject();
 
+            personEditDto.PhoneNumbers = [];
+            var phoneNumber = {};
+
+            phoneNumber.PhoneType = personEditDto.PhoneNumberType;
+            phoneNumber.Number = personEditDto.PhoneNumber;
+            personEditDto.PhoneNumbers.push(phoneNumber);
+
+
             abp.ui.setBusy(_$modal);
 
             _personService.createOrUpdatePerson({ personEditDto }).done(function () {

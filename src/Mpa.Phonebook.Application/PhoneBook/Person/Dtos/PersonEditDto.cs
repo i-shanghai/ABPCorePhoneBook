@@ -2,6 +2,8 @@
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Mpa.Phonebook.PhoneBook.Persons;
+using Mpa.Phonebook.PhoneBook.PhoneNumbers.Dto;
+using System.Collections.Generic;
 
 namespace Mpa.Phonebook.PhoneBook.Dtos
 {
@@ -33,5 +35,10 @@ namespace Mpa.Phonebook.PhoneBook.Dtos
         /// </summary>
         [MaxLength(PhonebookConsts.MaxAddressLength)]
         public string Address { get; set; }
+
+        /// <summary>
+        /// 电话号码
+        /// </summary>
+        public List<PhoneNumberEditDto> PhoneNumbers { get; set; }
     }
 }

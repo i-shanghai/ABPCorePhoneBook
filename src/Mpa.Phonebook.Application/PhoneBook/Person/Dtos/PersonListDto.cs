@@ -4,6 +4,7 @@ using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Mpa.Phonebook.PhoneBook.Persons;
 using Mpa.Phonebook.PhoneBook.PhoneNumbers;
+using Mpa.Phonebook.PhoneBook.PhoneNumbers.Dto;
 
 namespace Mpa.Phonebook.PhoneBook.Dtos
 {
@@ -32,6 +33,6 @@ namespace Mpa.Phonebook.PhoneBook.Dtos
         /// <summary>
         /// 电话号码
         /// </summary>
-        public List<PhoneNumber> PhoneNumbers { get; set; }
+        public List<PhoneNumberListDto> PhoneNumbers { get; set; }
     }
 }

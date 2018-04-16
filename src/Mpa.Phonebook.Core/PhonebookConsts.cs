@@ -14,5 +14,7 @@
 
         public const int MaxAddressLength = 500;
 
+        public const int MaxPhoneNoLength = 20;
+
     }
 }
