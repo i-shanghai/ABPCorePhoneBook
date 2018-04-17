@@ -18,11 +18,14 @@
             //Form表单序列化为Object
             var personEditDto = _$form.serializeFormToObject();
 
+            //给PersonEditDto设置电话号码信息
             personEditDto.PhoneNumbers = [];
-            var phoneNumber = {};
 
-            phoneNumber.PhoneType = personEditDto.PhoneNumberType;
+            //一个电话号码对象
+            var phoneNumber = {};
+            phoneNumber.PhoneType = personEditDto.PhoneType;
             phoneNumber.Number = personEditDto.PhoneNumber;
+
             personEditDto.PhoneNumbers.push(phoneNumber);
 
 
@@ -82,7 +85,14 @@
                 $("input[name=Id]").val(data.personEditDto.id);
                 $("input[name=Name]").val(data.personEditDto.name).closest(".form-line").addClass("focused");
                 $("input[name=Email]").val(data.personEditDto.email).closest(".form-line").addClass("focused");
-                $("input[name=Address]").val(data.personEditDto.address).closest(".form-line").addClass("focused");  
+                $("input[name=Address]").val(data.personEditDto.address).closest(".form-line").addClass("focused");
+
+                if (data.personEditDto.phoneNumbers.length>0) {
+                    $("input[name=PhoneNumber]").val(data.personEditDto.phoneNumbers[0].number).closest(".form-line").addClass("focused");
+
+                    $("select[name=PhoneType]").selectpicker('val', data.personEditDto.phoneNumbers[0].PhoneType);
+                    //$("input[name=Address]").val(data.personEditDto.address).closest(".form-line").addClass("focused"); 
+                }  
             }); 
         });
        

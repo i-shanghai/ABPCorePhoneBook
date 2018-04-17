@@ -135,29 +135,28 @@
                                 </div>
                             </div>
                             
-                            <div class="row clearfix" style="margin-top:10px;">
-                                <div class="col-sm-12">
+                         
+                            <div class="row clearfix" style="margin-top: 10px;">
+                                <div class="col-sm-3">
+                                    <div class="form-group form-float">
+                                        <select name="PhoneType">
+                                            <option value="0" selected="selected">请选择电话类型</option>
+                                            <option value="1">移动电话</option>
+                                            <option value="2">家庭电话</option>
+                                            <option value="3">公司电话</option>
+                                        </select>
+                                    </div>
+                                </div>  
+                                <div class="col-sm-2"></div> 
+                                <div class="col-sm-6">
                                     <div class="form-group form-float">
                                         <div class="form-line">
                                             <input class="form-control" type="text" name="PhoneNumber" required maxlength="@PhonebookConsts.MaxPhoneNoLength" minlength="2">
                                             <label class="form-label">@L("PhoneNumber")</label>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row clearfix" style="margin-top:10px;">
-                                <div class="col-sm-12">
-                                    <div class="form-group form-float">
-                                        <select name="PhoneType">
-                                            <option value="1">移动电话</option>
-                                            <option value="2">家庭电话</option>
-                                            <option value="3">公司电话</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
+                                </div> 
+                            </div> 
                         </div>
 
                     </div>
