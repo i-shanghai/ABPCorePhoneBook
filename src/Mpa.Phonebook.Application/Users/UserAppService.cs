@@ -15,6 +15,7 @@ using Mpa.Phonebook.Authorization.Roles;
 using Mpa.Phonebook.Authorization.Users;
 using Mpa.Phonebook.Roles.Dto;
 using Mpa.Phonebook.Users.Dto;
+using Mpa.Phonebook.Authorization.Users.Dtos;
 
 namespace Mpa.Phonebook.Users
 {
@@ -25,8 +26,10 @@ namespace Mpa.Phonebook.Users
         private readonly RoleManager _roleManager;
         private readonly IRepository<Role> _roleRepository;
         private readonly IPasswordHasher<User> _passwordHasher;
+        private readonly IUserRepository _userRepository;
 
         public UserAppService(
+            IUserRepository userRepository,
             IRepository<User, long> repository,
             UserManager userManager,
             RoleManager roleManager,
@@ -38,6 +41,7 @@ namespace Mpa.Phonebook.Users
             _roleManager = roleManager;
             _roleRepository = roleRepository;
             _passwordHasher = passwordHasher;
+            _userRepository = userRepository;
         }
 
         public override async Task<UserDto> Create(CreateUserDto input)
@@ -90,6 +94,33 @@ namespace Mpa.Phonebook.Users
         {
             var roles = await _roleRepository.GetAllListAsync();
             return new ListResultDto<RoleDto>(ObjectMapper.Map<List<RoleDto>>(roles));
+        }
+
+
+
+        public async Task<List<string>> GetUsers()
+        {
+            return await _userRepository.GetUserNames();
+        }
+
+        public async Task<List<string>> GetAdminUsernames()
+        {
+            return await _userRepository.GetAdminUsernames();
+        }
+
+        public async Task DeleteUser(EntityDto input)
+        {
+            await _userRepository.DeleteUser(input);
+        }
+
+        public async Task UpdateEmail(UpdateEmailDto input)
+        {
+            await _userRepository.UpdateEmail(input);
+        }
+
+        public async Task<GetUserByIdOutput> GetUserById(EntityDto input)
+        {
+            return await _userRepository.GetUserById(input);
         }
 
         public async Task ChangeLanguage(ChangeUserLanguageDto input)
